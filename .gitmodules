@@ -1,0 +1,6 @@
+[submodule "src/main/proto/slack_kotlin_grpc_proto"]
+	path = src/main/proto/slack_kotlin_grpc_proto
+	url = github.com-anmol92verma:Anmol92verma/slack_kotlin_grpc_proto.git
+[submodule "src/main/protos"]
+	path = src/main/protos
+	url = github.com-anmol92verma:Anmol92verma/slack_kotlin_grpc_proto.git

@@ -14,12 +14,12 @@ version = "1.0-SNAPSHOT"
 sourceSets{
     main {
         proto{
-            srcDirs("build/generated/source/proto/main/grpc")
+            srcDirs("build/generated/source/protos/main/grpc")
             // Kotlin essential
-            srcDirs("build/generated/source/proto/main/grpckt")
-            srcDirs("build/generated/source/proto/main/java")
+            srcDirs("build/generated/source/protos/main/grpckt")
+            srcDirs("build/generated/source/protos/main/java")
             exclude("src/main/java")
-            exclude("src/main/proto")
+            exclude("src/main/protos")
         }
     }
 }
