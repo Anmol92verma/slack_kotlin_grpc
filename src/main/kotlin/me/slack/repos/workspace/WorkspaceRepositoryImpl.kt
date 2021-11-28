@@ -4,7 +4,7 @@ import kotlinx.coroutines.flow.Flow
 
 class WorkspaceRepositoryImpl(private val workspaceDataSource: WorkspaceDataSource) : WorkspaceRepository {
 
-    override fun streamWorkspacesFor(request: Slackbase.SKUser): Flow<Slackbase.SKUserWorkspaces> {
+    override fun streamWorkspacesFor(request: Slackbase.Empty): Flow<Slackbase.SKUserWorkspaces> {
         return workspaceDataSource.stream
     }
 }
