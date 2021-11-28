@@ -11,18 +11,27 @@ plugins {
 group = "me.slack"
 version = "1.0-SNAPSHOT"
 
-sourceSets{
+
+
+sourceSets {
     main {
-        proto{
-            srcDirs("build/generated/source/protos/main/grpc")
-            // Kotlin essential
-            srcDirs("build/generated/source/protos/main/grpckt")
-            srcDirs("build/generated/source/protos/main/java")
+        java {
+            srcDirs("build/generated/source/proto/main/grpc")
+            srcDirs("build/generated/source/proto/main/grpckt")
+            srcDirs("build/generated/source/proto/main/java")
+        }
+
+        proto {
+            srcDirs("build/generated/source/proto/main/grpc")
+            srcDirs("build/generated/source/proto/main/grpckt")
+            srcDirs("build/generated/source/proto/main/java")
             exclude("src/main/java")
-            exclude("src/main/protos")
+            exclude("src/main/proto")
         }
     }
 }
+
+
 
 protobuf {
     protoc {
